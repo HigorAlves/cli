@@ -4,6 +4,8 @@ import { rmSync } from 'fs'
 
 const command: GluegunCommand = {
   name: 'clean',
+  alias: 'c',
+  dashed: true,
   description: 'Delete all folders with a given name',
   run: async (toolbox) => {
     const {
